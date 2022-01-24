@@ -45,7 +45,7 @@ def getCaptureDevice():
 
 def getWritePath(labelIn):
     # datetime = datetime.datetime.now()
-    writePath = dataFolder+"/"+jetsonID+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/"+ "MINTS_"+ jetsonID+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) +".mkv"
+    writePath = dataFolder+"/"+jetsonID+"/"+str(dateTime.year).zfill(4)  + "/" + str(dateTime.month).zfill(2)+ "/"+str(dateTime.day).zfill(2)+"/"+ "MINTS_"+ jetsonID+ "_" +labelIn + "_" + str(dateTime.year).zfill(4) + "_" +str(dateTime.month).zfill(2) + "_" +str(dateTime.day).zfill(2) + "_" +str(dateTime.hour).zfill(2)+  "_" +str(dateTime.minute).zfill(2)+  "_" +str(dateTime.second).zfill(2)+".mkv"
     directoryCheck(writePath)
     print("Write Path = " + writePath)
 
